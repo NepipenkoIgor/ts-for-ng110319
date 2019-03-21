@@ -31,6 +31,17 @@ function getUnique() {
     });
     return uniqueArray;
 }
+/*
 console.log(getUnique(1, '2', true, {}, 2, true));
-var testObj = { a: 1 };
-console.log(getUnique(1, '2', 1, testObj, { a: 2 }, false, testObj));
+const testObj = {a: 1};
+console.log(getUnique(1, '2', 1, testObj, {a: 2}, false, testObj));*/
+function toMatrix(arr, rowSize) {
+    var mutatedArray = arr.slice();
+    var resultArray = [];
+    while (mutatedArray.length) {
+        resultArray.push(mutatedArray.splice(0, rowSize));
+    }
+    return resultArray;
+}
+console.log(toMatrix([1, 2, 3, 4, 5, 6, 7], 2));
+console.log(toMatrix([1, 2, 3, 4, 5, 6, 7], 4));

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'none',
-    entry: './src/rxjs.ts',
+    entry: './lesson-2/SolovyanovaMaria/homework2.ts',
     output: {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, 'dist')
@@ -22,4 +22,4 @@ module.exports = {
             template: "./src/index.html"
         })
     ]
-}
+};
